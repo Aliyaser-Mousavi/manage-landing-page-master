@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <style>
+      html,
+      body {
+        overflow-x: hidden;
+      }
+    </style>
+    <style>
+      swiper-container {
+        width: 100%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+      }
+
+      swiper-slide {
+        background-position: center;
+        background-size: cover;
+        width: 300px;
+        height: auto;
+        background-color: #f3f4f6;
+        border-radius: 8px;
+      }
+    </style>
+
+    <title>Frontend Mentor | Manage landing page</title>
+  </head>
+  <body class="overflow-x-hidden z-50">
+    <div class="overflow-x-hidden max-w-7xl mx-auto">
+      <div class="max-w-7xl mx-auto p-4 overflow-x-hidden pt-8 relative z-50">
+        <div class="md:block hidden">
+          <div class="flex justify-between items-center">
+            <div>
+              <img src="/src/images/logo.svg" alt="logo" />
+            </div>
+            <div>
+              <nav>
+                <ul class="flex items-center justify-between gap-6">
+                  <a href="#"
+                    ><li
+                      class="relative text-[#1D2C5E] hover:text-gray-500 after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-full after:h-1 after:rounded-full after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300 after:origin-left after:bg-gradient-to-r after:from-[#F25C2E] after:to-[#1D2C5E] pb-1"
+                    >
+                      Pricing
+                    </li></a
+                  >
+                  <a href="#"
+                    ><li
+                      class="relative text-[#1D2C5E] hover:text-gray-500 after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-full after:h-1 after:rounded-full after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300 after:origin-left after:bg-gradient-to-r after:from-[#1D2C5E] after:to-[#F25C2E] pb-1"
+                    >
+                      Product
+                    </li></a
+                  >
+                  <a href="#"
+                    ><li
+                      class="relative text-[#1D2C5E] hover:text-gray-500 after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-full after:h-1 after:rounded-full after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300 after:origin-left after:bg-gradient-to-r after:from-[#F25C2E] after:to-[#1D2C5E] pb-1"
+                    >
+                      About Us
+                    </li></a
+                  >
+                  <a href="#"
+                    ><li
+                      class="relative text-[#1D2C5E] hover:text-gray-500 after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-full after:h-1 after:rounded-full after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300 after:origin-left after:bg-gradient-to-r after:from-[#1D2C5E] after:to-[#F25C2E] pb-1"
+                    >
+                      Careers
+                    </li></a
+                  >
+                  <a href="#"
+                    ><li
+                      class="relative text-[#1D2C5E] hover:text-gray-500 after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-full after:h-1 after:rounded-full after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300 after:origin-left after:bg-gradient-to-r after:from-[#F25C2E] after:to-[#1D2C5E] pb-1"
+                    >
+                      Community
+                    </li></a
+                  >
+                </ul>
+              </nav>
+            </div>
+            <div>
+              <a
+                href="#"
+                class="bg-gradient-to-r from-[#F25C2E] to-[#1D2C5E] text-white font-semibold py-2 px-4 rounded-full transition-all duration-500 hover:bg-gradient-to-r hover:from-[#1D2C5E] hover:to-[#F25C2E]"
+                >Get Started</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="md:hidden block">
+          <div class="flex justify-between items-center">
+            <div>
+              <img src="/src/images/logo.svg" alt="logo" />
+            </div>
+            <div>
+              <a
+                href="#"
+                class="bg-gradient-to-r from-[#F25C2E] to-[#1D2C5E] text-white font-semibold py-2 px-4 rounded-full transition-all duration-500 hover:bg-gradient-to-r hover:from-[#1D2C5E] hover:to-[#F25C2E]"
+                >Get Started</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="absolute inset-0 -z-10 max-w-7xl mx-auto h-auto overflow-hidden"
+      >
+        <img
+          src="/src/images/bg-tablet-pattern.svg"
+          alt="Background"
+          class="w-[620px] sm:w-[480px] md:w-[620px] lg:w-[620px] h-auto absolute lg:-top-28 lg:-right-28 md:-top-32 md:-right-32 sm:-top-28 sm:-right-28 -top-16 -right-16"
+        />
+      </div>
+    </div>
+    <div
+      class="max-w-7xl mx-auto p-4 flex justify-center md:justify-between items-center gap-10 flex-col-reverse md:flex-row lg:pt-20"
+    >
+      <div class="md:w-1/2 space-y-8">
+        <h1
+          class="font-bold md:text-4xl text-3xl lg:text-5xl md:w-[400px] md:text-left text-center text-[#1D2C5E]"
+        >
+          Bring everyone together to build better products.
+        </h1>
+        <p class="text-gray-500 md:w-80 md:text-left text-center">
+          Manage makes it simple for software teams to plan day-to-day tasks
+          while keeping the larger team goals in view.
+        </p>
+        <div class="flex md:justify-start justify-center">
+          <a
+            href="#"
+            class="bg-gradient-to-r from-[#1D2C5E] to-[#F25C2E] text-white font-semibold py-2 px-4 rounded-full transition-all duration-500 hover:bg-gradient-to-r hover:from-[#F25C2E] hover:to-[#1D2C5E]"
+            >Get Started</a
+          >
+        </div>
+      </div>
+      <div class="md:w-1/2">
+        <img
+          src="/src/images/illustration-intro.svg"
+          alt="illustration-intro"
+          class="lg:w-[500px] md:w-[400px] w-[450px] lg:translate-x-24"
+        />
+      </div>
+    </div>
+    <div
+      class="max-w-7xl mx-auto lg:pt-6 p-4 grid md:grid-cols-2 grid-cols-1 justify-between space-y-16 pt-20 lg:mt-0 relative overflow-hidden z-50"
+    >
+      <div class="space-y-6">
+        <div class="block md:hidden">
+          <img
+            src="/src/images/bg-tablet-pattern.svg"
+            alt="tablet-pattern"
+            class="w-[620px] sm:w-[480px] md:w-[620px] lg:w-[620px] absolute -z-50 -top-44 -right-56"
+          />
+        </div>
+        <h2
+          class="font-bold md:text-3xl text-2xl lg:text-4xl md:w-[400px] md:text-left text-center text-[#1D2C5E] z-50"
+        >
+          What’s different about Manage?
+        </h2>
+        <p class="text-gray-500 md:w-80 md:text-left text-center z-50">
+          Manage provides all the functionality your team needs, without the
+          complexity. Our software is tailor-made for modern digital product
+          teams.
+        </p>
+        <div class="hidden md:block">
+          <img
+            src="/src/images/bg-tablet-pattern.svg"
+            alt="tablet-pattern"
+            class="w-[620px] sm:w-[480px] md:w-[620px] lg:w-[620px] absolute -left-64 -z-50 -bottom-[340px]"
+          />
+        </div>
+      </div>
+      <div class="space-y-9">
+        <div class="space-y-6">
+          <div
+            class="flex items-center gap-4 bg-[#fff1ec] sm:bg-white rounded-l-full"
+          >
+            <p
+              class="text-white text-center px-6 lg:text-[18px] md:text-[16px] text-[13px] py-1.5 rounded-full bg-[#F25C2E]"
+            >
+              01
+            </p>
+            <p
+              class="font-medium md:text-2xl text-[14px] lg:text-3xl text-[#1D2C5E]"
+            >
+              Track company-wide progress
+            </p>
+          </div>
+          <p class="text-gray-500 lg:text-[20px] md:text-[16px] text-[12px]">
+            See how your day-to-day tasks fit into the wider vision. Go from
+            tracking progress at the milestone level all the way done to the
+            smallest of details. Never lose sight of the bigger picture again.
+          </p>
+        </div>
+        <div class="space-y-6">
+          <div
+            class="flex items-center gap-4 bg-[#fff1ec] sm:bg-white rounded-l-full"
+          >
+            <p
+              class="text-white text-center px-6 lg:text-[18px] md:text-[16px] text-[13px] py-1.5 rounded-full bg-[#F25C2E]"
+            >
+              02
+            </p>
+            <p
+              class="font-medium md:text-2xl text-[14px] lg:text-3xl text-[#1D2C5E]"
+            >
+              Advanced built-in reports
+            </p>
+          </div>
+          <p class="text-gray-500 lg:text-[20px] md:text-[16px] text-[12px]">
+            Set internal delivery estimates and track progress toward company
+            goals. Our customisable dashboard helps you build out the reports
+            you need to keep key stakeholders informed.
+          </p>
+        </div>
+        <div class="space-y-6">
+          <div
+            class="flex items-center gap-4 bg-[#fff1ec] sm:bg-white rounded-l-full"
+          >
+            <p
+              class="text-white text-center px-6 lg:text-[18px] md:text-[16px] text-[13px] py-1.5 rounded-full bg-[#F25C2E]"
+            >
+              03
+            </p>
+            <p
+              class="font-medium md:text-2xl text-[12px] lg:text-3xl text-[#1D2C5E]"
+            >
+              Everything you need in one place
+            </p>
+          </div>
+          <p class="text-gray-500 lg:text-[20px] md:text-[16px] text-[12px]">
+            Stop jumping from one service to another to communicate, store
+            files, track tasks and share documents. Manage offers an all-in-one
+            team productivity solution.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="mt-24">
+      <h3
+        class="font-bold md:text-3xl text-2xl lg:text-4xl text-center text-[#1D2C5E]"
+      >
+        What they’ve said
+      </h3>
+      <!-- Swiper -->
+      <div class="sm:block hidden">
+        <swiper-container
+          class="mySwiper"
+          pagination="false"
+          effect="coverflow"
+          grab-cursor="true"
+          centered-slides="true"
+          slides-per-view="auto"
+          coverflow-effect-rotate="50"
+          coverflow-effect-stretch="0"
+          coverflow-effect-depth="100"
+          coverflow-effect-modifier="1"
+          coverflow-effect-slide-shadows="true"
+        >
+          <swiper-slide>
+            <div
+              class="flex flex-col justify-center items-center px-2 py-8 space-y-3"
+            >
+              <img
+                src="/src/images/avatar-anisha.png"
+                alt="avatar-anisha"
+                class="size-14"
+              />
+              <p class="text-[#1D2C5E] font-medium text-[18px]">Anisha Li</p>
+              <p class="text-gray-500 text-center">
+                “Manage has supercharged our team’s workflow. The ability to
+                maintain visibility on larger milestones at all times keeps
+                everyone motivated.”
+              </p>
+            </div>
+          </swiper-slide>
+          <swiper-slide>
+            <div
+              class="flex flex-col justify-center items-center px-2 py-8 space-y-3"
+            >
+              <img
+                src="/src/images/avatar-Bravo.png"
+                alt="avatar-Bravo"
+                class="size-14"
+              />
+              <p class="text-[#1D2C5E] font-medium text-[18px]">Bravo</p>
+              <p class="text-gray-500 text-center">
+                “We have been able to cancel so many other subscriptions since
+                using Manage. There is no more cross-channel confusion and
+                everyone is much more focused.”
+              </p>
+            </div>
+          </swiper-slide>
+          <swiper-slide>
+            <div
+              class="flex flex-col justify-center items-center px-2 py-8 space-y-3"
+            >
+              <img
+                src="/src/images/avatar-richard.png"
+                alt="avatar-richard"
+                class="size-14"
+              />
+              <p class="text-[#1D2C5E] font-medium text-[18px]">
+                Richard Watts
+              </p>
+              <p class="text-gray-500 text-center">
+                “Manage allows us to provide structure and process. It keeps us
+                organized and focused. I can’t stop recommending them to
+                everyone I talk to!”
+              </p>
+            </div>
+          </swiper-slide>
+          <swiper-slide>
+            <div
+              class="flex flex-col justify-center items-center px-2 py-8 space-y-3"
+            >
+              <img
+                src="/src/images/avatar-shanai.png"
+                alt="avatar-shanai"
+                class="size-14"
+              />
+              <p class="text-[#1D2C5E] font-medium text-[18px]">Shanai Gough</p>
+              <p class="text-gray-500 text-center">
+                “Their software allows us to track, manage and collaborate on
+                our projects from anywhere. It keeps the whole team in-sync
+                without being intrusive.”
+              </p>
+            </div>
+          </swiper-slide>
+        </swiper-container>
+      </div>
+      <div class="sm:hidden block">
+        <swiper-container
+          class="mySwiper"
+          pagination="true"
+          effect="coverflow"
+          grab-cursor="true"
+          centered-slides="true"
+          slides-per-view="auto"
+          coverflow-effect-rotate="50"
+          coverflow-effect-stretch="0"
+          coverflow-effect-depth="100"
+          coverflow-effect-modifier="1"
+          coverflow-effect-slide-shadows="true"
+        >
+          <swiper-slide>
+            <div
+              class="flex flex-col justify-center items-center px-2 py-8 space-y-3"
+            >
+              <img
+                src="/src/images/avatar-anisha.png"
+                alt="avatar-anisha"
+                class="size-14"
+              />
+              <p class="text-[#1D2C5E] font-medium text-[18px]">Anisha Li</p>
+              <p class="text-gray-500 text-center">
+                “Manage has supercharged our team’s workflow. The ability to
+                maintain visibility on larger milestones at all times keeps
+                everyone motivated.”
+              </p>
+            </div>
+          </swiper-slide>
+          <swiper-slide>
+            <div
+              class="flex flex-col justify-center items-center px-2 py-8 space-y-3"
+            >
+              <img
+                src="/src/images/avatar-Bravo.png"
+                alt="avatar-Bravo"
+                class="size-14"
+              />
+              <p class="text-[#1D2C5E] font-medium text-[18px]">Bravo</p>
+              <p class="text-gray-500 text-center">
+                “We have been able to cancel so many other subscriptions since
+                using Manage. There is no more cross-channel confusion and
+                everyone is much more focused.”
+              </p>
+            </div>
+          </swiper-slide>
+          <swiper-slide>
+            <div
+              class="flex flex-col justify-center items-center px-2 py-8 space-y-3"
+            >
+              <img
+                src="/src/images/avatar-richard.png"
+                alt="avatar-richard"
+                class="size-14"
+              />
+              <p class="text-[#1D2C5E] font-medium text-[18px]">
+                Richard Watts
+              </p>
+              <p class="text-gray-500 text-center">
+                “Manage allows us to provide structure and process. It keeps us
+                organized and focused. I can’t stop recommending them to
+                everyone I talk to!”
+              </p>
+            </div>
+          </swiper-slide>
+          <swiper-slide>
+            <div
+              class="flex flex-col justify-center items-center px-2 py-8 space-y-3"
+            >
+              <img
+                src="/src/images/avatar-shanai.png"
+                alt="avatar-shanai"
+                class="size-14"
+              />
+              <p class="text-[#1D2C5E] font-medium text-[18px]">Shanai Gough</p>
+              <p class="text-gray-500 text-center">
+                “Their software allows us to track, manage and collaborate on
+                our projects from anywhere. It keeps the whole team in-sync
+                without being intrusive.”
+              </p>
+            </div>
+          </swiper-slide>
+        </swiper-container>
+      </div>
+    </div>
+    <div class="flex justify-center">
+      <a
+        href="#"
+        class="bg-gradient-to-r from-[#F25C2E] to-[#1D2C5E] text-white font-semibold py-2 px-4 rounded-full transition-all duration-500 hover:bg-gradient-to-r hover:from-[#1D2C5E] hover:to-[#F25C2E]"
+        >Get Started</a
+      >
+    </div>
+    <div class="bg-[#F25C2E]">
+      <div
+        class="max-w-7xl mx-auto p-4 mt-24 flex justify-between items-center sm:flex-row flex-col"
+      >
+        <h3
+          class="text-white font-bold lg:text-4xl md:text-3xl text-2xl lg:w-[440px] py-10"
+        >
+          Simplify how your team works today.
+        </h3>
+        <a
+          href="#"
+          class="text-[#F25C2E] font-semibold py-2 px-4 rounded-full bg-white mb-8 sm:mb-0"
+          >Get Started</a
+        >
+      </div>
+    </div>
+    <div class="bg-black w-full">
+      <div
+        class="max-w-7xl mx-auto p-4 pt-10 pb-10 flex items-center justify-center space-y-6 md:space-y-0 md:flex-row flex-col"
+      >
+        <div class="w-2/6 space-y-10">
+          <div
+            class="flex items-center justify-center md:items-start md:justify-start"
+          >
+            <img src="/src/images/logo_text_white.svg" alt="logo" />
+          </div>
+          <div
+            class="flex gap-3 items-center justify-center md:items-start md:justify-start"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="30"
+              height="30"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-facebook-icon lucide-facebook text-white hover:text-[#7184c1] cursor-pointer"
+            >
+              <path
+                d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="30"
+              height="30"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-youtube-icon lucide-youtube text-white hover:text-[#F25C2E] cursor-pointer"
+            >
+              <path
+                d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"
+              />
+              <path d="m10 15 5-3-5-3z" />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="30"
+              height="30"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-twitter-icon lucide-twitter text-white hover:text-[#7184c1] cursor-pointer"
+            >
+              <path
+                d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="30"
+              height="30"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-linkedin-icon lucide-linkedin text-white hover:text-[#F25C2E] cursor-pointer"
+            >
+              <path
+                d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+              />
+              <rect width="4" height="12" x="2" y="9" />
+              <circle cx="4" cy="4" r="2" />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="30"
+              height="30"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-instagram-icon lucide-instagram text-white hover:text-[#7184c1] cursor-pointer"
+            >
+              <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+              <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+            </svg>
+          </div>
+        </div>
+        <div class="w-1/6">
+          <nav>
+            <ul
+              class="flex flex-col gap-4 items-center justify-center md:items-start md:justify-start"
+            >
+              <a href="#"
+                ><li
+                  class="relative text-white hover:text-[#F25C2E] after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-full after:h-1 after:rounded-full after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300 after:origin-left after:bg-gradient-to-r after:from-[#F25C2E] after:to-[#7184c1] w-[70px] pb-1"
+                >
+                  About Us
+                </li></a
+              >
+              <a href="#"
+                ><li
+                  class="relative text-white hover:text-[#7184c1] after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-full after:h-1 after:rounded-full after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300 after:origin-left after:bg-gradient-to-r after:from-[#7184c1] after:to-[#F25C2E] w-16 pb-1"
+                >
+                  Contact
+                </li></a
+              >
+              <a href="#"
+                ><li
+                  class="relative text-white hover:text-[#F25C2E] after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-full after:h-1 after:rounded-full after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300 after:origin-left after:bg-gradient-to-r after:from-[#F25C2E] after:to-[#7184c1] w-12 pb-1"
+                >
+                  Blog
+                </li></a
+              >
+            </ul>
+          </nav>
+        </div>
+        <div class="w-1/6">
+          <nav>
+            <ul
+              class="flex flex-col gap-4 items-center justify-center md:items-start md:justify-start"
+            >
+              <a href="#"
+                ><li
+                  class="relative text-white hover:text-[#7184c1] after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-full after:h-1 after:rounded-full after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300 after:origin-left after:bg-gradient-to-r after:from-[#7184c1] after:to-[#F25C2E] w-16 pb-1"
+                >
+                  Careers
+                </li></a
+              >
+              <a href="#"
+                ><li
+                  class="relative text-white hover:text-[#F25C2E] after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-full after:h-1 after:rounded-full after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300 after:origin-left after:bg-gradient-to-r after:from-[#F25C2E] after:to-[#7184c1] w-16 pb-1"
+                >
+                  Support
+                </li></a
+              >
+              <a href="#"
+                ><li
+                  class="relative text-white hover:text-[#7184c1] after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-full after:h-1 after:rounded-full after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300 after:origin-left after:bg-gradient-to-r after:from-[#7184c1] after:to-[#F25C2E] w-28 pb-1"
+                >
+                  Privacy Policy
+                </li></a
+              >
+            </ul>
+          </nav>
+        </div>
+        <div class="w-2/6">
+          <div
+            class="flex items-center justify-center md:items-start md:justify-start gap-3"
+          >
+            <input
+              type="text"
+              placeholder="Updates in your inbox..."
+              class="px-6 py-2.5 rounded-full text-sm text-gray-500 placeholder-gray-400 focus:outline-none bg-white shadow"
+            />
+
+            <a
+              href="#"
+              class="bg-gradient-to-r from-[#7184c1] to-[#F25C2E] text-white font-semibold py-2 px-4 rounded-full transition-all duration-500 hover:bg-gradient-to-r hover:from-[#F25C2E] hover:to-[#7184c1]"
+              >Go</a
+            >
+          </div>
+          <div class="md:block hidden">
+            <div class="pt-8 flex flex-row items-center">
+              <p class="text-[#7184c1]">Copyright 2020.</p>
+              <p class="text-[#F25C2E]">All Rights Reserved</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+  </body>
+</html>
