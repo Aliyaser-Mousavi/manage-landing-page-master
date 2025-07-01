@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "tailwind.config.js",
   "scripts": {
-    "build": "npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch"
+    "postinstall": "chmod +x ./node_modules/.bin/tailwindcss",
+    "build": "npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --minify"
   },
   "author": "",
   "license": "ISC",
